@@ -1,0 +1,16 @@
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    margin-top: 25px;
+  }
+  
+  .intro h1 {
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1.2em;
+  }
+  

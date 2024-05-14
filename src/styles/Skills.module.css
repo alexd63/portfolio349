@@ -1,0 +1,36 @@
+.skillsSpace {
+  position: relative;
+  background-color: #f0f0f0; 
+  color: #333; 
+  padding: 10px 20px;
+  overflow: hidden;
+  height: 300px; 
+}
+
+.stars {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.skill {
+  position: absolute;
+  color: #333; 
+  background-color: #ffffff; 
+  padding: 8px 16px;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.skill:hover {
+  transform: scale(1.4); 
+  background-color: #e6e6e6; 
+}
+
+.skill:nth-child(1) { top: 10%; left: 25%; } /* JavaScript */
+.skill:nth-child(2) { top: 50%; left: 78%; } /* React */
+.skill:nth-child(3) { top: 28%; left: 45%; } /* NodeJS */
+.skill:nth-child(4) { top: 10%; left: 65%; } /* swift */
+.skill:nth-child(5) { top: 50%; left: 15%; } /* Objcetive c  */

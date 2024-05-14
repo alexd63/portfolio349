@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Introduction from './components/Intro';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 function App() {
+  const [highlightedSection, setHighlightedSection] = useState('');
+
+  const handleHighlightSection = (section) => {
+    setHighlightedSection(section);
+    setTimeout(() => {
+      setHighlightedSection('');  // Remove highlight after 3 seconds
+    }, 3000);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar onSectionClick={handleHighlightSection} />
+      <Introduction highlight={highlightedSection === 'introduction'} />
+      <Skills highlight={highlightedSection === 'skills'} />
+      <Projects highlight={highlightedSection === 'projects'} />
+      <Contact highlight={highlightedSection === 'contact'} />
     </div>
   );
 }

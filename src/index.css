@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+.highlight {
+  animation: highlightAnimation 3s ease;
+}
+
+@keyframes highlightAnimation {
+  from { background-color: yellow; }
+  to { background-color: transparent; }
+}
