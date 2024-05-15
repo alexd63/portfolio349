@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Skills.module.css'; 
 
-
+// displays list of skills in a space
 function Skills() {
   return (
     <section id="skills" className={styles.skillsSpace}>

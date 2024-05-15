@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Projects.module.css';
 
+// displays a list of projects with links to their GitHub repositories
 function Projects() {
   return (
     <section id="projects" className={styles.projects}>

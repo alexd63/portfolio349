@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Navbar.module.css';
 
+// provides navigation links to different sections of the page
 function Navbar() {
   return (
     <nav className={styles.navbar}>

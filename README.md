@@ -4,10 +4,10 @@ This is a personal portfolio website developed using React. It showcases my skil
 
 ## Features
 
-- **Introduction Section:**
-- **Skills Section:**
-- **Projects Section:** 
-- **Contact Section:**
+- **Introduction Section**
+- **Skills Section**
+- **Projects Section** 
+- **Contact Section**
 
 ## Technologies Used
 

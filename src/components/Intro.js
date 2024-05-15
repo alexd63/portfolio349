@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Intro.module.css';
 
+// Intro component displays a brief introduction
 function Intro() {
   return (
     <section id="intro" className={styles.intro}>
